@@ -48,7 +48,7 @@ re_blockcode_start = re.compile('(?<=[\*]class\s)\w+', re.I | re.VERBOSE)
 # - doxygen file:
 #   - add FILE_PATTERNS: *.frag, *.vert
 #   - add FILTER_PATTERNS: "*.frag=glslfilter.py", "*.vert=glslfilter.py"
-# latest version on <a href="http://www.numb3r23.net">www.numb3r23.net</a>
+# latest version on <a href="http://www.grasmo.de">www.grasmo.de</a>
 
 ##run regex on a single line
 # @returns either a found result or None
@@ -75,7 +75,7 @@ def generateName(filename):
 	return tail
 	
 def writeLine(txt):
-	sys.stdout.write(txt + "\n")
+	sys.stdout.write(txt)
 	
 ## parse a shader and generate needed information along on the way
 ## - if comments contain a namespace move it the classname
