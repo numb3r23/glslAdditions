@@ -24,14 +24,11 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-
-
 import getopt          # get command-line options
 import os.path         # getting extension from file
 import string          # string manipulation
 import sys             # output and stuff
 import re              # for regular expressions
-
 
 ## extract doxygen-tag class
 re_doxy_class = re.compile('(?<=[@]class\s)\w+', re.I | re.VERBOSE)
@@ -45,7 +42,7 @@ re_blockcode_start = re.compile('(?<=[\*]class\s)\w+', re.I | re.VERBOSE)
 # @author Sebastian Schäfer
 # @date 02/2012
 # @version 0.1
-# @copyright GNU Public License.
+# @copyright MIT License.
 # 
 # @details The shader file is wrapped into a class and namespace that can be set with 
 # doxygen-tags.
@@ -114,8 +111,6 @@ def parseShader(filename, txt, type = None):
 				line = txt.pop(0)
 			comment.append(line)
 				
-	
-
 	# dump the file and pad it with namespace/name class information
 	# 1st: namespace + class padding, also declare everything public
 	writeLine("/** @namespace " + namespace + " */")
