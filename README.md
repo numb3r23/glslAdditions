@@ -25,4 +25,4 @@ I've written a [linter plugin](https://github.com/numb3r23/SublimeLinter-contrib
 
 ## Other things ##
 
-There's a bash script [blurCubemap.sh](https://github.com/numb3r23/glslAdditions/blurCubemap.sh) to blur a cubemap, e.g. useful for diffuse reflections and IBL things. Feel free to change the blur values for a more blurred variant. The input is expected to have the name convention: `[neg,pos][x,y,z].jpg`.
+There's a bash script [blurCubemap.sh](blurCubemap.sh) to blur a cubemap, e.g. useful for diffuse reflections and IBL things. Feel free to change the blur values for a more blurred variant. The input is expected to have the name convention: `[neg,pos][x,y,z].jpg`.
